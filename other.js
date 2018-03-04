@@ -3,11 +3,13 @@ var myCar = {
     driver: "Paulina",
     drive: function () {
         console.log("Now driving");
+    },
+    logDriver: function() {
+        console.log("Driver name is " + this.driver);
     }
 };
 
-
-
+myCar.logDriver();
 myCar.drive();
 
 var myCar2 = {
