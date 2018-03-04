@@ -1,14 +1,7 @@
-var a = 5;
-var b = 7;
+var myString = "Im a nice string";
 
-if (isNaN(a)) {
-    console.log("that is not even a number");
+if (myString.indexOf("ninja") === -1) {
+    console.log("the word ninja doesn't exist in the string");
 } else {
-    console.log("meaning of life is " + (a + b));
+    console.log("There's such a word in the string");
 }
-
-/* The above is the same as
-if (!isNaN(a)) {
-   console.log("meaning of life is " + (a + b));
-   }
- */
