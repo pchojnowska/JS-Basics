@@ -16,3 +16,9 @@ styledLink.setAttribute("style", "position: relative; left: 10px;");
 styledLink.style.margin = "10px";
 styledLink.style.color = "green";
 styledLink.style.backgroundColor = "yellow";
+
+var newHref = document.createElement("a");
+var allLinks = document.getElementsByTagName("body")[0];
+allLinks.insertBefore(newHref, allLinks.getElementsByTagName("script")[0]);
+newHref.innerHTML = "New link";
+newHref.setAttribute("href", "#");
