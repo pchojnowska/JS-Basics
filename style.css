@@ -1,0 +1,45 @@
+body {
+    background: aliceblue;
+}
+
+#content {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    padding-top: 0;
+    font-family: calibri, sans-serif;
+    font-size: 18px;
+    color: #444;
+    margin: 0 auto;
+
+    max-height: 150px;
+    overflow: hidden;
+
+    /* Set transitions up. */
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+/* When the content has a class "open" added, its max-height expands. Transitions - to expand smoothly */
+#content.open {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#show-more {
+    background: #1594e5;
+    color: #fff;
+    font-family: calibri, sans-serif;
+    display: block;
+    width: 140px;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
+
+}
